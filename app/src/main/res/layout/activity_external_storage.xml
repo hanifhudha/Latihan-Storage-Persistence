@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExternalStorageActivity">
+
+    <TextView
+        android:id="@+id/textViewex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/external_storage"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTxtKalimatex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="@string/masukkan_kalimat"
+        android:inputType="textPersonName"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewex"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnBFintex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Buat file"
+        android:onClick="actionBuatFileExt"
+        app:layout_constraintEnd_toEndOf="@+id/editTxtKalimatex"
+        app:layout_constraintStart_toStartOf="@+id/editTxtKalimatex"
+        app:layout_constraintTop_toBottomOf="@+id/editTxtKalimatex" />
+
+    <Button
+        android:id="@+id/btnUFintex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Ubah file"
+        android:onClick="actionUbahFileExt"
+        app:layout_constraintEnd_toEndOf="@+id/btnBFintex"
+        app:layout_constraintStart_toStartOf="@+id/btnBFintex"
+        app:layout_constraintTop_toBottomOf="@+id/btnBFintex" />
+
+    <Button
+        android:id="@+id/btnBcFintex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Baca file"
+        android:onClick="actionBacaFileExt"
+        app:layout_constraintEnd_toEndOf="@+id/btnUFintex"
+        app:layout_constraintStart_toStartOf="@+id/btnUFintex"
+        app:layout_constraintTop_toBottomOf="@+id/btnUFintex" />
+
+    <Button
+        android:id="@+id/btnHFintex"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hapus file"
+        android:onClick="actionHapusFileExt"
+        app:layout_constraintEnd_toEndOf="@+id/btnBcFintex"
+        app:layout_constraintStart_toStartOf="@+id/btnBcFintex"
+        app:layout_constraintTop_toBottomOf="@+id/btnBcFintex" />
+
+    <View
+        android:id="@+id/viewex"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#2CC6AF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHFintex" />
+
+    <TextView
+        android:id="@+id/txtTampilex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Kosong!"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/viewex"
+        app:layout_constraintStart_toStartOf="@+id/viewex"
+        app:layout_constraintTop_toTopOf="@+id/viewex" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
